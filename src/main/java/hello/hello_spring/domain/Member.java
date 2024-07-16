@@ -2,7 +2,7 @@ package hello.hello_spring.domain;
 
 public class Member {
 
-    private long id;
+    private long id; //자바에서는 long이지만 db에서는 bigint라는 타입
     private String name;
 
     public long getId() {
