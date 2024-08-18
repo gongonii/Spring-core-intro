@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @Transactional //테스트를 실행할때 트렌젝션을 먼저 실행하고 다음에 db에 데이터를 인서트 쿼리하고 다 넣은다음 테스트가 끝나면 롤백을 해줌 (db에 넣었던 데이터가 다 깔끔하게 반영이 안되고 지워짐 )
 class MemberServiceIntegrationTest  {
 
-    //test는 한글로 바꿔도 무관
+    //test 는 한글로 바꿔도 무관
     @Autowired MemberService memberService ;
     @Autowired
     MemberRepository memberRepository;
