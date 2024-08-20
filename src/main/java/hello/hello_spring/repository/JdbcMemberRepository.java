@@ -6,13 +6,12 @@ import java.util.List;
 import java.util.Optional;
 
 
+import jakarta.persistence.EntityManager;
 import org.springframework.jdbc.datasource.DataSourceUtils;
 
 import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 
 public class JdbcMemberRepository implements MemberRepository {
 

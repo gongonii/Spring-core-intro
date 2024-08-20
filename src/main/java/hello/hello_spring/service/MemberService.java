@@ -5,11 +5,12 @@ import hello.hello_spring.repository.MemberRepository;
 import hello.hello_spring.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
-
+@Transactional // 데이터를 저장하고 변경할 때 필수로 있어야함 (회원가입때만 팔요하므로 회원가입 위에다 해도 상관없음)
 public class MemberService {
 
 
